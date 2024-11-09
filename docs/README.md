@@ -35,7 +35,7 @@ This screen capture shows how the final PWA will be rendered to the user.
 ## Requirements
 
 1. [VSCode](https://code.visualstudio.com/download)
-2. [Python 3.x](https://www.python.org/downloads/)
+2. [Python 3.12.x](https://www.python.org/downloads/)
 3. [GIT 2.x.x +](https://git-scm.com/downloads)
 
 > [!Important]
