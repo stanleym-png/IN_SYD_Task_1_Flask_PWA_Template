@@ -97,14 +97,6 @@ After forking the repository, select to clone it to your local computer. When cl
 > The first time you try to 'commit changes' you may receive an error message indicating you need to set your git identify. Follow the instructions to run these two commands giving the username and email address for your git account
 >![Screen capture setting git identity](/docs/README_resources/setGitIdentity.PNG "Set GIT identity")
 
-Alternatively (instead of forking the repository):
-   - Open a new window in VSCode
-   - Choose your working directory
-
-```bash
-git clone https://github.com/TempeHS/Flask_PWA_Programming_For_The_Web_Task_Template.git
-cd Flask_PWA_Programming_For_The_Web_Task_Template
-```
 
 > [!TIP]
 > You may receive a pop-up in VS Code with a recommendation to install a "Dev Containers" extension. This can be ignored.
