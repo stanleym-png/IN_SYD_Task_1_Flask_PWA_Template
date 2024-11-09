@@ -86,7 +86,7 @@ Make sure you open a new terminal with the keys <kbd>Ctrl</kbd> + <kbd>`</kbd> a
 
 1. Get the working files, which include this README.md
 > [!TIP]
-> You can fork the [template repository](https://github.com/TempeHS/Flask_PWA_Programming_For_The_Web_Task_Template) to your own GitHub account and open it in a Codespace in which all dependencies and extensions will be automatically installed.
+> You can fork the [template repository](https://github.com/hdwyer-det/IN_SYD_Task_1_Flask_PWA_Template) to your own GitHub account and open it in a Codespace in which all dependencies and extensions will be automatically installed.
 
 After forking the repository, select to clone it to your local computer. When cloning, select a folder that is backed up to the Cloud (recommended - select a OneDrive folder)
 
