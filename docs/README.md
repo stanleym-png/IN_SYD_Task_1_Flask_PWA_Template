@@ -94,7 +94,8 @@ After forking the repository, select to clone it to your local computer. When cl
 > VS Code with GIT. The 'fork' is creating your version of the repository with the base set of files. This repository is online. The 'clone' creates a version of the repository on your local computer. After each session you work on the code you should 'Commit changes' from VS Code as this will sync up the changes to online version.   In case you forget to do this, you will still have an online backup as-long as you are using OneDrive for the cloned repository location.
 > You will be able to work on this project across multiple computers. To do this, you will need to become more familiar with using GIT (ask and/or google for help).
 > 
-> The first time you try to 'commit changes' you may receive an error message indicating you need to set your git identify. Follow the instructions to do this.
+> The first time you try to 'commit changes' you may receive an error message indicating you need to set your git identify. Follow the instructions to run these two commands giving the username and email address for your git account
+>![Screen capture setting git identity](/docs/README_resources/setGitIdentity.PNG "Set GIT identity")
 
 Alternatively (instead of forking the repository):
    - Open a new window in VSCode
@@ -517,6 +518,8 @@ code index.html
 ```
 
 3. Use Janga2 to pass the data (which is a [tuple](https://www.w3schools.com/python/python_tuples.asp)) to front end content. Insert the HTML inside the `<div class="container">` of the index.html.
+See image for how this should look:
+![Screen capture for index.html file](/docs/README_resources/DivClassCard.PNG "index.html file after insert")
 
 ```html
 {% for row in content %}
