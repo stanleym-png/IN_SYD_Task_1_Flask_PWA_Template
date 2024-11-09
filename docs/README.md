@@ -47,11 +47,10 @@ This screen capture shows how the final PWA will be rendered to the user.
 
 ## Prior learning
 
-1. Bash basics
-2. SQL
-3. HTML Basics
-4. CSS Basics
-5. Python
+1. SQL
+2. HTML Basics
+3. CSS Basics
+4. Python
 
 ## STEPS TO BUILDING YOUR FIRST PWA
 
@@ -75,13 +74,29 @@ This screen capture shows how the final PWA will be rendered to the user.
 _\*You will need to configure your formatters, it is recommended esbenp.prettier-vscode is your default formatter and ms-python.black-formatter is the Python language formatter_
 
 > [!Important]
+> Before you continue, you should create a GIT account (if you don't already have one) using your school google account. Do this via https://github.com/
+
+> [!Important]
 > From now on, you should aim to run all commands from the CLI. You are discouraged from left/right clicking the GUI. You will find it feels slow at first, but through disciplined use, you will become much quicker and more accurate with CLI commands than GUI controls.
+
 
 Make sure you open a new terminal with the keys <kbd>Ctrl</kbd> + <kbd>`</kbd> and choose Git Bash from the menu option in the top right of the terminal shell.
 
 ![Screen capture of the menu options for terminals](/docs/README_resources/git_bash_shell.png "Choose Git Bash from the list")
 
 1. Get the working files, which include this README.md
+> [!TIP]
+> You can fork the [template repository](https://github.com/TempeHS/Flask_PWA_Programming_For_The_Web_Task_Template) to your own GitHub account and open it in a Codespace in which all dependencies and extensions will be automatically installed.
+
+After forking the repository, select to clone it to your local computer. When cloning, select a folder that is backed up to the Cloud (recommended - select a OneDrive folder)
+
+> [!TIP]
+> VS Code with GIT. The 'fork' is creating your version of the repository with the base set of files. This repository is online. The 'clone' creates a version of the repository on your local computer. After each session you work on the code you should 'Commit changes' from VS Code as this will sync up the changes to online version.   In case you forget to do this, you will still have an online backup as-long as you are using OneDrive for the cloned repository location.
+> You will be able to work on this project across multiple computers. To do this, you will need to become more familiar with using GIT (ask and/or google for help).
+> 
+> The first time you try to 'commit changes' you may receive an error message indicating you need to set your git identify. Follow the instructions to do this.
+
+Alternatively:
    - Open a new window in VSCode
    - Choose your working directory
 
@@ -91,9 +106,9 @@ cd Flask_PWA_Programming_For_The_Web_Task_Template
 ```
 
 > [!TIP]
-> Alternatively, you can fork the [template repository](https://github.com/TempeHS/Flask_PWA_Programming_For_The_Web_Task_Template) to your own GitHub account and open it in a Codespace in which all dependencies and extensions will be automatically installed.
+> You may receive a pop-up in VS Code with a recommendation to install a "Dev Containers" extension. This can be ignored.
 
-4. Install necessary dependencies.
+2. Install necessary dependencies.
 
 ```bash
 pip install flask
@@ -106,7 +121,7 @@ pip install flask
 1. Files or folders that start with a dot (`\.*` or `.*.*`) can't be served by the web server. This adds a layer of security for assets that you do not want to be public.
 
 ```bash
-mkdir .workingDocuments
+mkdir .workingdocuments
 ```
 
 2. Create a license file.
@@ -132,12 +147,21 @@ Copy the [GNU GPL license](https://www.gnu.org/licenses/gpl-3.0.txt) text into t
 └── database_manager.py
 ```
 
-3. Populate a text file with a list of folders you need at the root of your project.
+> [!Important]
+> In the files.txt and folders.txt file
+> - The last list item needs a line ending, so make sure there is a blank last line in the file.
+> - Change the "End of line sequence" to "LF" before running the BASH script. The "End of line sequence" can be set by clicking on 'CRLF' in the bottom right of VS Code when you have the files open.  
+
+3. Populate a text file with a list of folders you need at the root of your project
 
 ```bash
 touch folders.txt
 code folder.txt
 ```
+
+> [!TIP]
+> The BASH command 'touch' creates a new file with the name given
+> The BASH command 'code' will open that file for editing in VS Code
 
 4. Run a BASH script to read the text file and create the folders listed in it.
 
@@ -147,6 +171,13 @@ echo $line
 mkdir -p $line
 done < folders.txt
 ```
+
+> [!TIP]
+> This BASH script is reading from the 'folders.txt' file. For each line in the file, it will run the 'mkdir' command which 'makes a directory (folder) for the given name.
+> The BASH command 'echo' is like a print command
+
+> [!TIP]
+> Redo steps 3 & 4 for the sub-folders under 'static'
 
 5. Populate the file with a list of files you need at the root of your project.
 
@@ -160,14 +191,11 @@ code files.txt
 ```bash
 while read -r line; do
 echo $line
-touch -p $line
-done < files.txt\
+touch $line
+done < files.txt
 ```
 
-> [!Important]
->
-> - The last list item needs a line ending, so make sure there is a blank last line in the file.
-> - You will find that all file and folder names have an unwanted `space` character at the end. This is because you are using a BASH emulator on the Windows operating system. Bash is a Unix language that uses [LF Unicode character 000A while Windows uses CRLF Unicode characters 000D + 000A](https://learn.microsoft.com/en-us/visualstudio/ide/encodings-and-line-breaks?view=vs-2022). Because you have installed the [medo64.render-crlf](https://marketplace.visualstudio.com/items?itemName=medo64.render-crlf) extension, click on `CRLF` in the bottom bar of VSCode and choose `LF` to change the line ending before running your BASH script.
+
 
 ---
 
@@ -179,15 +207,6 @@ touch data_source.db
 touch my_queries.sql
 code my_queries.sql
 ```
-
-> [!Note]
-> The following SQL queries are provided as an example only. Students are encouraged to select their content and design a database schema for it; ideas include:
->
-> - Favourite bands
-> - Favourite movies
-> - Favourite games
-> - Favourite books
-> - etc
 
 1. To run SQLite3 SQL queries in VSCode
 Open the DB file, then choose "Query Editor" from the top menu.
@@ -228,9 +247,18 @@ SELECT * FROM extension;
 SELECT * FROM extension WHERE language LIKE '#BASH';
 ```
 
+> [!Important]
+> When using the Query Editor, the commands you ran may not be automically saved to a file within VS Code.
+> To ensure they are saved, always copy and paste them into the "my_queries.sql" file
+
 ---
 
 ### Make your graphic assets
+
+> [!Important]
+> The following 'graphic asset' instructions do not need to be followed for the sample project, as the graphic assets have been included in the template repository.
+> These instructions have been kept here so you can create your own graphic assets for your project.
+
 
 > [!Note]
 > Graphic design is not the focus of this course. It is suggested that you do not spend excessive time designing logos and icons.
@@ -436,6 +464,13 @@ if __name__ == '__main__':
 ```bash
 python main.py
 ```
+
+> [!TIP]
+> Flask is a framework that will enable your web server components to be run, and for HTTP requests to be made and responded to with the html page.
+> When you run the main.py file, the output will have a link you can click on to open the PWA
+> To stop the web server, click into the terminal window and (on Windows) enter Ctrl-C
+>
+> Every time you want to view your website in the browser, you will need to rerun the above step
 
 3. Visit your website and look at the source in developer tools to see how the page has been rendered.
 
