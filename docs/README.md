@@ -151,6 +151,7 @@ Copy the [GNU GPL license](https://www.gnu.org/licenses/gpl-3.0.txt) text into t
 > In the files.txt and folders.txt file
 > - The last list item needs a line ending, so make sure there is a blank last line in the file.
 > - Change the "End of line sequence" to "LF" before running the BASH script. The "End of line sequence" can be set by clicking on 'CRLF' in the bottom right of VS Code when you have the files open.  
+![Screen capture of the button for changing end of line sequence](/docs/README_resources/EndOfLine.PNG "Choose LF list")
 
 3. Populate a text file with a list of folders you need at the root of your project
 
