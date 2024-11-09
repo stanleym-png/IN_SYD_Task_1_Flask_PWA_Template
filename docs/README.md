@@ -96,7 +96,7 @@ After forking the repository, select to clone it to your local computer. When cl
 > 
 > The first time you try to 'commit changes' you may receive an error message indicating you need to set your git identify. Follow the instructions to do this.
 
-Alternatively:
+Alternatively (instead of forking the repository):
    - Open a new window in VSCode
    - Choose your working directory
 
