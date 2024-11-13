@@ -62,7 +62,7 @@ Install the following software. Use default install options, with one exception.
 ![Screen recording of setting up VSCode](/docs/README_resources/get_vscode_started.gif "Follow these steps to setup VSCode")
 
 > [!Note]
-> Helpful VSCode settings are configured in [.vscode/settings.json](/.vscode/settings.json) which will automatically apply if you are not using a custom profile. If you are using a custom profile, it is suggested you manually apply those settings to your profile, especially the \*.md file association, so the README.md default opens in preview mode and setting _bash_ as your default terminal.
+> OPTIONAL: Helpful VSCode settings are configured in [.vscode/settings.json](/.vscode/settings.json) which will automatically apply if you are not using a custom profile. If you are using a custom profile, it is suggested you manually apply those settings to your profile, especially the \*.md file association, so the README.md default opens in preview mode and setting _bash_ as your default terminal.
 
 1. Install the necessary extensions for this tutorial.
 
@@ -74,7 +74,7 @@ Install the following software. Use default install options, with one exception.
 |                                                                                                        | [oderwat.indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)         |
 |                                                                                                        | [esbenp.prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)\*       |
 
-_\*You will need to configure your formatters, it is recommended esbenp.prettier-vscode is your default formatter and ms-python.black-formatter is the Python language formatter_
+_\*OPTIONAL: You may want to configure your formatters, you can select esbenp.prettier-vscode to be your default formatter and ms-python.black-formatter as the Python language formatter_
 
 > [!Important]
 > Before you continue, you should create a GIT account (if you don't already have one) using your school google account. Do this via https://github.com/
